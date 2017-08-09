@@ -89,10 +89,11 @@ var guesses = 0;
 
 while (guesses < 6) {
   var state = prompt('Can you guess what states I\'ve lived in other that Washington?');
-  if (state.toLowerCase() !== livedState[0] || state.toLowerCase() !== livedState[0]); {
-  guesses++
-  alert ('Nope. Try again. You have ' + guessesRemaining + ' left.');
-} else if (state.toLowerCase() === 'michigan' || state.toLowerCase() === 'minnesota'); {
-  alert ('You got one! I\'ve lived in Washington, Michigan, and Minnesota. And it only took you ' + guessesRemaining + ' tries!');
+  if (state.toLowerCase() === livedState[0] || livedState[1]) {
+    alert ('You got one! I\'ve lived in Washington, Michigan, and Minnesota.');
+  } else {
+    alert ('Nope. Try again. You have ' + guessesRemaining + ' left.');
+    guesses++;
+    guessesRemaining--;
   }
 }
