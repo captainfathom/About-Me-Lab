@@ -61,3 +61,14 @@ if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
 }
 console.log('I am from a beautiful island paradise. True?');
 console.log(home.toLowerCase());
+
+//begin questions 6-7
+var oldDog = prompt ('My dog, Bentley, has been with me through a lot. Can you guess how old he is?');
+
+if (oldDog.parseInt() < '11') {
+  alert('Nope. Hint, he\'s a wise old soul.')
+} else if (oldDog.parseInt() > 11) {
+  alert('I hope he makes it that long, but he\'s not there yet.')
+} else {
+  alert('That\'s right! He\'s 11 years old and going strong!')
+}
