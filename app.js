@@ -63,24 +63,25 @@
 // console.log(home.toLowerCase());
 
 //begin questions 6-7
-var attempts = 0;
-var attemptsRemaining = 4;
+var attempts = 4;
 
-while (attempts < 4) {
-  var oldDog = prompt ('My dog, Bentley, has been with me through a lot. Can you guess how old he is? You have ' + attemptsRemaining + ' tries left.');
+while (attempts > 0) {
+  var oldDog = prompt ('My dog, Bentley, has been with me through a lot. Can you guess how old he is? You have ' + attempts + ' tries left.');
   if (oldDog < 11) {
-    attempts++;
-    attemptsRemaining--;
+    attempts--;
     alert ('Nope. Hint, he\'s a wise old soul.');
   } else if (oldDog > 11) {
-    attempts++;
-    attemptsRemaining--;
+    attempts--;
     alert ('I hope he makes it that long, but he\'s not there yet.');
-  } else if (oldDog === 11) {
-    alert ('That\'s right! He\'s 11 years old and going strong!');
-  } else if (attempts = 4) {
-    alert ('Thanks for playing. Bentley is 11 years old and going strong!');
+  } else {
+    break;
   }
+}
+
+if (oldDog === 11) {
+  alert ('That\'s right! He\'s 11 years old and going strong!');
+} else {
+  alert ('Thanks for playing. Bentley is 11 years old and going strong!');
 }
 
 var livedState = [michigan, minnesota];
