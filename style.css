@@ -12,7 +12,14 @@ header {
   background: #f1f1f1;
   text-align: center;
 }
-h1 {
+h2 {
   font-size: 30px;
   font-weight: lighter;
+  color: #black;
+}
+body {
+  background-image: url(https://farm5.staticflickr.com/4323/36086906042_0015cbb13b_k.jpg)
+}
+footer+p {
+  font-size: 35px;
 }
