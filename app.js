@@ -64,16 +64,35 @@
 
 //begin questions 6-7
 var attempts = 0;
-while(attempts < 4) {
-  var oldDog = prompt ('My dog, Bentley, has been with me through a lot. Can you guess how old he is?');
-  if (oldDog.parseInt() < '11') {
+var attemptsRemaining = 4;
+
+while (attempts < 4) {
+  var oldDog = prompt ('My dog, Bentley, has been with me through a lot. Can you guess how old he is? You have ' + attemptsRemaining + ' tries left.');
+  if (oldDog < 11) {
     attempts++;
-    alert('Nope. Hint, he\'s a wise old soul.');
-  } else if (oldDog.parseInt() > 11) {
+    attemptsRemaining--;
+    alert ('Nope. Hint, he\'s a wise old soul.');
+  } else if (oldDog > 11) {
     attempts++;
-    alert('I hope he makes it that long, but he\'s not there yet.');
-  } else {
-    attempts = 4;
-    alert('That\'s right! He\'s 11 years old and going strong!');
+    attemptsRemaining--;
+    alert ('I hope he makes it that long, but he\'s not there yet.');
+  } else if (oldDog === 11) {
+    alert ('That\'s right! He\'s 11 years old and going strong!');
+  } else if (attempts = 4) {
+    alert ('Thanks for playing. Bentley is 11 years old and going strong!');
+  }
+}
+
+var livedState = [michigan, minnesota];
+var guessesRemaining = 6;
+var guesses = 0;
+
+while (guesses < 6) {
+  var state = prompt('Can you guess what states I\'ve lived in other that Washington?');
+  if (state.toLowerCase() !== livedState[0] || state.toLowerCase() !== livedState[0]); {
+  guesses++
+  alert ('Nope. Try again. You have ' + guessesRemaining + ' left.');
+} else if (state.toLowerCase() === 'michigan' || state.toLowerCase() === 'minnesota'); {
+  alert ('You got one! I\'ve lived in Washington, Michigan, and Minnesota. And it only took you ' + guessesRemaining + ' tries!');
   }
 }
