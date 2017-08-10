@@ -99,6 +99,7 @@ if (parseInt(oldDog) === 11) {
 }
 
 var livedState = ['michigan', 'minnesota'];
+var printLivedState = livedState.join (', ');
 var guesses = 6;
 
 while (guesses > 0) {
@@ -106,7 +107,7 @@ while (guesses > 0) {
   console.log('Can you guess what states I\'ve lived in other that Washington?');
   console.log(state);
   if (livedState.includes(state.toLowerCase())) {
-    alert ('You got one! I\'ve lived in Washington, Michigan, and Minnesota.');
+    alert ('You got one! I\'ve lived in Washington, ' + printLivedState + '.');
     break;
   } else {
     guesses--;
