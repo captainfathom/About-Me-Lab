@@ -1,6 +1,6 @@
 'use strict';
 
-alert ('Welcome to my page. Before you get to see my page, let\'s see what you already know...or think you know about me. There\'s 7 points available. Good luck.');
+alert ('Welcome to my page. Before you get to see my page, let\'s see what you already know...or think you know about me. In this little game, there\'s 7 superpower points available. Good luck.');
 
 var score = 0;
 
@@ -79,11 +79,11 @@ var attempts = 4;
 while (attempts > 0) {
   var oldDog = prompt ('My dog, Bentley, has been with me through a lot. Can you guess how old he is? You have ' + attempts + ' tries left.');
   console.log('My dog, Bentley, has been with me through a lot. Can you guess how old he is?');
-  console.log(oldDog);
-  if (oldDog < 11) {
+  console.log(parseInt(oldDog));
+  if (parseInt(oldDog) < 11) {
     attempts--;
     alert ('Nope. Hint, he\'s a wise old soul.');
-  } else if (oldDog > 11) {
+  } else if (parseInt(oldDog) > 11) {
     attempts--;
     alert ('I hope he makes it that long, but he\'s not there yet.');
   } else {
@@ -91,7 +91,7 @@ while (attempts > 0) {
   }
 }
 
-if (oldDog === 11) {
+if (parseInt(oldDog) === 11) {
   alert ('That\'s right! He\'s 11 years old and going strong!');
   score++;
 } else {
@@ -121,4 +121,8 @@ if (livedState.includes(state.toLowerCase())) {
   alert ('You don\'t know me. But, thanks for playing');
 }
 
-alert ('Thanks for playing. You got ' + score + '/7! Welcome to my webpage.');
+if (score < 5) {
+  alert ('Thanks for playing. You got ' + score + '/7! You are well on your way to superpowers galore. Welcome to my webpage.');
+} else if (score >= 5) {
+  alert ('You\'re superpower is guessing random things about people, you got ' + score + '/7. Kudos to you.');
+}
