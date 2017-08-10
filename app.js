@@ -119,7 +119,7 @@ if (livedState.includes(state.toLowerCase())) {
   alert ('Way to go! Creepy, but impressive');
   score++;
 } else {
-  alert ('You don\'t know me. But, thanks for playing');
+  alert ('You don\'t know me. I\'ve lived in Washington, ' + printLivedState + '.');
 }
 
 if (score < 5) {
