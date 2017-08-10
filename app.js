@@ -44,7 +44,7 @@ console.log('Do I speak many languages?');
 console.log(language.toLowerCase());
 
 //score update
-prompt('You\'ve got ' + score + '/7 so far. Let\'s keep going!');
+alert ('You\'ve got ' + score + '/7 so far. Let\'s keep going!');
 
 var juggling = prompt ('I am terrible at juggling. Yes or no?');
 
@@ -63,7 +63,7 @@ var home = prompt ('I am from a beautiful island paradise. True?');
 
 if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
   alert('You\'re right! (mostly) I\'m from Whidbey Island in the Puget Sound. It is pretty awesome, but not the picture of an island paradise usually imagined.');
-  score++
+  score++;
 } else if(home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
   alert('Well, I think it\'s a kind of island paradise. I\'m from Whidbey Island in the Puget Sound. It is pretty awesome, but not the picture of an island paradise usually imagined');
 } else {
@@ -72,7 +72,7 @@ if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
 console.log('I am from a beautiful island paradise. True?');
 console.log(home.toLowerCase());
 
-prompt ('Two more questions to go. So far you have ' + score + '/7.')
+alert ('Two more questions to go. So far you have ' + score + '/7.');
 //begin questions 6-7
 var attempts = 4;
 
@@ -120,3 +120,5 @@ if (livedState.includes(state.toLowerCase())) {
 } else {
   alert ('You don\'t know me. But, thanks for playing');
 }
+
+alert ('Thanks for playing. You got ' + score + '/7! Welcome to my webpage.');
