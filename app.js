@@ -8,7 +8,7 @@ var climb = prompt ('I have climbed every peak over 8000ft in Washington State. 
 
 if (climb.toLowerCase() === 'yes' || climb.toLowerCase() === 'y') {
   alert('I wish. But, alas, I have climbed only to 7223 ft on Navajo Peak, but nothing higher in Washington.');
-} else if(climb.toLowerCase() === 'no' || climb.toLowerCase === 'n') {
+} else if(climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
   alert('You are correct! As cool as that would be, the highest peak I\'ve climbed is Navajo Peak at 7223ft.');
   score++;
 } else {
