@@ -2,24 +2,24 @@
 
 alert ('Welcome to my page. Before you get to see my page, let\'s see what you already know...or think you know about me. In this little game, there\'s 7 superpower points available. Good luck.');
 
-function Score(){
+function score() {
   var score = 0;
   var answerLog = [];
   var questionLog = ['I have climbed every peak over 8000ft in Washington State. Believe me?', 'Do you think I have two boys, 1 and 3 years old, who are the most awesome kids in the world?', 'Do I speak many languages?', 'I am terrible at juggling. Yes or no?', 'I am from a beautiful island paradise. True?', 'My dog, Bentley, has been with me through a lot. Can you guess how old he is?', 'Can you guess what states I\'ve lived in other that Washington?'];
   var resLog = ['I wish. But, alas, I have climbed only to 7223 ft on Navajo Peak, but nothing higher in Washington.', 'You are correct! As cool as that would be, the highest peak I\'ve climbed is Navajo Peak at 7223ft.', 'Please answer yes or no. But, for now, let\'s just move on...', 'Yes! I have the two most awesome boys in the world. I say this without the ability to know whether this is an objective or subjective truth, but it is definitly true to me!!!', 'I indeed have the two coolest kids on the planet. I say this without the ability to know whether this is an objective or subjective truth, but it is definitly true to me!!!', 'Please answer yes or no. But, for now, let\'s just move on...', 'Nope. Although I am half Mexican and my dad\'s first language is Spanish, I only speak English.', 'Nope. Although I am half Mexican and my dad\'s first language is Spanish, I only speak English.', 'Please answer yes or no. But, for now, let\'s just move on...', 'I\'m mildly offended that you assume I can\'t juggle, jk, but you are correct.', 'I may look like a world class juggler, but you would be wrong.', 'Please answer yes or no. But, for now, let\'s just move on...', 'You\'re right! (mostly) I\'m from Whidbey Island in the Puget Sound. It is pretty awesome, but not the picture of an island paradise usually imagined.', 'Well, I think it\'s a kind of island paradise. I\'m from Whidbey Island in the Puget Sound. It is pretty awesome, but not the picture of an island paradise usually imagined', 'Please answer yes or no. But, for now, let\'s just move on...', 'Nope. Hint, he\'s a wise old soul.', 'I hope he makes it that long, but he\'s not there yet.', 'That\'s right! He\'s 11 years old and going strong!', 'Thanks for playing. Bentley is 11 years old and going strong!', 'You must answer with a number', ['You got one! I\'ve lived in Washington, ', '.'], ['Nope. Try again. You have ', ' left.'], ['Oh No! Better luck next time. I lived in Washington, ', '.']];
   console.log(resLog[20][0]);
-  function Global(){
-    function question1(){
+  function global() {
+    function question1() {
       var firstQuestion = questionLog[0];
       var climb = prompt (firstQuestion);
       answerLog.push(climb);
       if (climb.toLowerCase() === 'yes' || climb.toLowerCase() === 'y') {
         alert(resLog[0]);
-      } else if(climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
+      } else if (climb.toLowerCase() === 'no' || climb.toLowerCase() === 'n') {
         alert(resLog[1]);
         score++;
       } else {
-        alert(resLog[2]);
+        alert (resLog[2]);
       }
       console.log(firstQuestion);
       console.log(climb.toLowerCase());
@@ -27,14 +27,14 @@ function Score(){
     }
     question1();
 
-    function question2 () {
+    function question2() {
       var secondQuestion = questionLog[1];
       var kids = prompt (secondQuestion);
       answerLog.push(kids);
       if (kids.toLowerCase() === 'yes' || kids.toLowerCase() === 'y') {
         alert(resLog[3]);
         score++;
-      }else if(kids.toLowerCase() === 'no' || kids.toLowerCase() === 'n') {
+      }else if (kids.toLowerCase() === 'no' || kids.toLowerCase() === 'n') {
         alert(resLog[4]);
       }else {
         alert(resLog[5]);
@@ -69,12 +69,12 @@ function Score(){
       var juggling = prompt (fourthQuestion);
       answerLog.push(juggling);
       if (juggling.toLowerCase() === 'yes' || juggling.toLowerCase() === 'y') {
-        alert(resLog[9]);
+        alert (resLog[9]);
         score++;
-      } else if(juggling.toLowerCase() === 'no' || juggling.toLowerCase() === 'n') {
+      } else if (juggling.toLowerCase() === 'no' || juggling.toLowerCase() === 'n') {
         alert(resLog[10]);
       } else {
-        alert(resLog[11]);
+        alert (resLog[11]);
       }
       console.log(fourthQuestion);
       console.log(juggling.toLowerCase());
@@ -88,7 +88,7 @@ function Score(){
       if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
         alert(resLog[12]);
         score++;
-      } else if(home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
+      } else if (home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
         alert(resLog[13]);
       } else {
         alert(resLog[14]);
@@ -161,6 +161,6 @@ function Score(){
       alert ('You\'re superpower is guessing random things about people, you got ' + score + '/7. Kudos to you.');
     }
   }
-  Global();
+  global () ;
 }
-Score();
+score();
