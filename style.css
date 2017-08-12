@@ -47,12 +47,20 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/*begin my css for page*/
 * {
   font: century;
   color: grey;
 }
-header {
-  font-family: sans-serif;
+header.img {
+	position: relative;
+	width: 25%;
+}
+header.h1 {
+	position: absolute;
+  font-family: helvetica;
   font-size: 40px;
   background-color: #f1f1f1;
   text-align: center;
@@ -61,13 +69,16 @@ header {
   background: #f1f1f1;
   text-align: center;
 }
+#content.img {
+	position: relative;
+	width: 40%;
+}
 h2 {
   font-size: 30px;
   font-weight: lighter;
   color: #black;
 }
 body {
-  background-image: url(https://farm5.staticflickr.com/4323/36086906042_0015cbb13b_k.jpg)
 }
 footer+p {
   font-size: 35px;
