@@ -47,50 +47,69 @@ table {
 	border-spacing: 0;
 }
 
-
-
 /*begin my css for page*/
-* {
-  font: century;
-  color: grey;
-}
-
-img.me {
-	position: absolute;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-}
-
 .me {
 	width: 100%;
 	text-align: center;
 	font-family: 'Muli', sans-serif;
 	color: rgba(255, 255, 255, .7);
   background-color: rgba(0, 0, 0, 0.3);
-	resize: vertical; height: 300px;
+	/*resize: vertical; height: 300px;*/
 	font-size: 100px;
 	font-weight: 800;
+	padding-top: 20%;
+	padding-bottom: 3%;
 }
-.page {
-	width: 100%;
-	text-align: center;
-	font-family: 'Muli', sans-serif;
-	color: rgba(255, 255, 255, .7);
-  background-color: rgba(0, 0, 0, 0.3);
-	resize: vertical; height: 100px;
+.tag {
 	font-size: 60px;
 	font-weight: 400;
 }
-#content {
-  background: #f1f1f1;
-  text-align: center;
+.bio {
+  background-color: white;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(56, 55, 60);
+	font-size: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 3%;
+	padding-left: 7%;
+	padding-right: 7%;
+	line-height: 130%;
 }
+.aboutme {
+  font-size: 50px;
+	font-family: 'Muli', sans-serif;
+  font-weight: 800;
+	text-align: center;
+	color: darkgrey;
 }
-h2 {
-  font-size: 30px;
-  font-weight: lighter;
-  color: #black;
+.education {
+	background-color: rgb(121, 130, 118);
+	width: 100%;
+	box-sizing: border-box;
+	padding: 3% 10% 5% 10%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: rbga(255, 255, 255, .8);
+	line-height: 130%;
+}
+.edu {
+	font-family: 'Muli', sans-serif;
+	font-size: 50px;
+	font-weight: 800;
+}
+.books {
+	background-color: rgb(84, 93, 81);
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+}
+.goals {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
 }
 body {
 	background-image: url("img/background.jpg");
