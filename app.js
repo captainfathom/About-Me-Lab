@@ -122,9 +122,10 @@ function score() {
           score++;
           console.log(score);
           break;
-        } else if (attempts === 1){
-          alert (resLog[18]);
         } else {alert(resLog[19]);
+        } if (attempts === 1){
+          alert (resLog[18]);
+          break;
         }
       }
     }
@@ -162,5 +163,6 @@ function score() {
     }
   }
   global () ;
+  console.log(answerLog);
 }
 score();

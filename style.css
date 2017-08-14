@@ -47,27 +47,85 @@ table {
 	border-spacing: 0;
 }
 
-* {
-  font: century;
-  color: grey;
+/*begin my css for page*/
+.me {
+	width: 100%;
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	color: rgba(255, 255, 255, .7);
+  background-color: rgba(0, 0, 0, 0.3);
+	font-size: 100px;
+	font-weight: 800;
+	padding-top: 20%;
+	padding-bottom: 3%;
 }
-header {
-  font-family: sans-serif;
+.tag {
+	font-size: 60px;
+	font-weight: 400;
+}
+.bio {
+  background-color: white;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: darkgrey;
+	font-size: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 4%;
+	padding-left: 10%;
+	padding-right: 10%;
+	line-height: 130%;
+}
+.aboutme {
   font-size: 40px;
-  background-color: #f1f1f1;
-  text-align: center;
+	font-family: 'Muli', sans-serif;
+  font-weight: 800;
+	text-align: center;
+	color: darkgrey;
 }
-#content {
-  background: #f1f1f1;
-  text-align: center;
+div.education {
+	background-color: rgb(164, 171, 162);
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 4%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 130%;
 }
-h2 {
-  font-size: 30px;
-  font-weight: lighter;
-  color: #black;
+.edu {
+	font-family: 'Muli', sans-serif;
+	font-size: 40px;
+	font-weight: 800;
+}
+.books {
+	background-color: rgb(84, 93, 81);
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	padding-top: 4%;
+}
+em {
+	font-style: italic;
+	font-size: 16px;
+}
+.goals {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: darkgrey;
+	padding-top: 4%;
+}
+.mim {
+	font-size: 12px;
 }
 body {
-  background-image: url(https://farm5.staticflickr.com/4323/36086906042_0015cbb13b_k.jpg)
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 footer+p {
   font-size: 35px;
