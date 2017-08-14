@@ -4,6 +4,7 @@ alert ('Welcome to my page. Before you get to see my page, let\'s see what you a
 
 function score() {
   var score = 0;
+  var name = prompt ('Let\'s get better aquinted; what\'s your name?');
   var answerLog = [];
   var questionLog = ['I have climbed every peak over 8000ft in Washington State. Believe me?', 'Do you think I have two boys, 1 and 3 years old, who are the most awesome kids in the world?', 'Do I speak many languages?', 'I am terrible at juggling. Yes or no?', 'I am from a beautiful island paradise. True?', 'My dog, Bentley, has been with me through a lot. Can you guess how old he is?', 'Can you guess what states I\'ve lived in other that Washington?'];
   var resLog = ['I wish. But, alas, I have climbed only to 7223 ft on Navajo Peak, but nothing higher in Washington.', 'You are correct! As cool as that would be, the highest peak I\'ve climbed is Navajo Peak at 7223ft.', 'Please answer yes or no. But, for now, let\'s just move on...', 'Yes! I have the two most awesome boys in the world. I say this without the ability to know whether this is an objective or subjective truth, but it is definitly true to me!!!', 'I indeed have the two coolest kids on the planet. I say this without the ability to know whether this is an objective or subjective truth, but it is definitly true to me!!!', 'Please answer yes or no. But, for now, let\'s just move on...', 'Nope. Although I am half Mexican and my dad\'s first language is Spanish, I only speak English.', 'Nope. Although I am half Mexican and my dad\'s first language is Spanish, I only speak English.', 'Please answer yes or no. But, for now, let\'s just move on...', 'I\'m mildly offended that you assume I can\'t juggle, jk, but you are correct.', 'I may look like a world class juggler, but you would be wrong.', 'Please answer yes or no. But, for now, let\'s just move on...', 'You\'re right! (mostly) I\'m from Whidbey Island in the Puget Sound. It is pretty awesome, but not the picture of an island paradise usually imagined.', 'Well, I think it\'s a kind of island paradise. I\'m from Whidbey Island in the Puget Sound. It is pretty awesome, but not the picture of an island paradise usually imagined', 'Please answer yes or no. But, for now, let\'s just move on...', 'Nope. Hint, he\'s a wise old soul.', 'I hope he makes it that long, but he\'s not there yet.', 'That\'s right! He\'s 11 years old and going strong!', 'Thanks for playing. Bentley is 11 years old and going strong!', 'You must answer with a number', ['You got one! I\'ve lived in Washington, ', '.'], ['Nope. Try again. You have ', ' left.'], ['Oh No! Better luck next time. I lived in Washington, ', '.']];
@@ -159,7 +160,7 @@ function score() {
     if (score < 5) {
       alert ('Thanks for playing. You got ' + score + '/7! You are well on your way to superpowers galore. Welcome to my webpage.');
     } else if (score >= 5) {
-      alert ('You\'re superpower is guessing random things about people, you got ' + score + '/7. Kudos to you.');
+      alert ('You\'re superpower is guessing random things about people, you got ' + score + '/7. Kudos to you, ' + name + '.');
     }
   }
   global () ;
