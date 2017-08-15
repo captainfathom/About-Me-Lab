@@ -158,7 +158,7 @@ function score() {
     }
     question7();
     if (score < 5) {
-      alert ('Thanks for playing. You got ' + score + '/7! You are well on your way to superpowers galore. Welcome to my webpage.');
+      alert ('Thanks for playing, ' + name + '. You got ' + score + '/7! You are well on your way to superpowers galore. Welcome to my webpage.');
     } else if (score >= 5) {
       alert ('You\'re superpower is guessing random things about people, you got ' + score + '/7. Kudos to you, ' + name + '.');
     }

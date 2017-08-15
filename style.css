@@ -23,9 +23,11 @@
 	text-align: center;
 	box-sizing: border-box;
 	padding-top: 4%;
+	line-height: 130%;
+}
+.bio p {
 	padding-left: 10%;
 	padding-right: 10%;
-	line-height: 130%;
 }
 .aboutme {
   font-size: 40px;
@@ -43,6 +45,10 @@ div.education {
 	font-size: 20px;
 	color: rgba(255, 255, 255, 0.8);
 	line-height: 130%;
+}
+.education p {
+	padding-left: 10%;
+	padding-right: 10%;
 }
 .edu {
 	font-family: 'Muli', sans-serif;
@@ -69,6 +75,10 @@ em {
 	color: darkgrey;
 	padding-top: 4%;
 }
+.goals p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
 .mim {
 	font-size: 12px;
 }
@@ -80,4 +90,8 @@ body {
 }
 footer+p {
   font-size: 35px;
+}
+.books em {
+	font-style: italic;
+	font-size: 12px;
 }
